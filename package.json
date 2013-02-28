@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "description": "sharedtapes backend",
+  "version": "0.0.1",
+  "author": "Drew Harris",
+  "dependencies": {
+    "express": "3.0.5",
+    "when": "1.5.1",
+    "sequence": "2.2.1",
+    "socket.io": "0.9.10",
+    "superagent": "0.10.0",
+    "leveldb": "0.7.1",
+    "ua-parser": "0.3.1",
+    "socket.io": "0.9.13",
+    "shortid": "1.0.9",
+    "nconf": "0.6.7",
+    "frontend": "git://github.com/sharedtapes/frontend.git#master"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
