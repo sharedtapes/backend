@@ -77,4 +77,14 @@ describe('Database', function(){
         });
     });
 
+    it("should get a mixtape", function(done){
+        myDatabase.getMixtapeById(1).then(function(response){
+            console.log(response);
+            done();
+        }, function(err){
+            console.log(err);
+            fail(err, done);
+        });
+    });
+
 });
