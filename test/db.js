@@ -6,11 +6,20 @@ var Db = require('../lib/db.js'),
     nconf = require('nconf');
 
 nconf.file(__dirname + '/../config.json');
-var myDatabase = Db.create("tcp://" +
-    nconf.get('postgresUser') + ":" +
-    nconf.get('postgresPassword') + "@" +
-    nconf.get('postgresHost') + ":" +
-    nconf.get('postgresPort'));
+
+nconf.defaults({
+    'user': '',
+    'password': '',
+    'host': 'localhost',
+    'port': 5432
+});
+
+var myDatabase = Db.create({
+    'user': nconf.get('postgresUser'),
+    'password': nconf.get('postgresPassword'),
+    'host': nconf.get('postgresHost'),
+    'port': nconf.get('postgresPort')
+});
 
 // just a quick fail function
 var fail = function(err, done){
