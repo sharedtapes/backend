@@ -16,7 +16,8 @@ var db = Db.create({
     'user': nconf.get('postgresUser'),
     'password': nconf.get('postgresPassword'),
     'host': nconf.get('postgresHost'),
-    'port': nconf.get('postgresPort')
+    'port': nconf.get('postgresPort'),
+    'db': nconf.get('postgresDb')
 });
 
 db.connect().then(function(){

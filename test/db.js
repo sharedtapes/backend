@@ -11,14 +11,15 @@ nconf.defaults({
     'user': '',
     'password': '',
     'host': 'localhost',
-    'port': 5432
+    'port': 5432,
 });
 
 var myDatabase = Db.create({
     'user': nconf.get('postgresUser'),
     'password': nconf.get('postgresPassword'),
     'host': nconf.get('postgresHost'),
-    'port': nconf.get('postgresPort')
+    'port': nconf.get('postgresPort'),
+    'db': 'sharedtapes_test'
 });
 
 // just a quick fail function
