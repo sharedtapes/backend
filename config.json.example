@@ -4,5 +4,6 @@
 	"postgresHost": "",
 	"postgresPort": 5432,
 	"postgresUser": "",
-	"postgresPassword": ""
+	"postgresPassword": "",
+	"postgresDb": "sharedtapes_prod"
 }
