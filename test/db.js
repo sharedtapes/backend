@@ -78,8 +78,7 @@ describe('Database', function(){
     });
 
     it("should get a mixtape", function(done){
-        myDatabase.getMixtapeById(1).then(function(response){
-            console.log(response);
+        myDatabase.getMixtape(1).then(function(response){
             done();
         }, function(err){
             console.log(err);
