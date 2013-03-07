@@ -127,7 +127,6 @@ describe('Database', function(){
                 source: 'http://awesome.com'
             }]
         }).then(function(response){
-            console.log(response);
             done();
         }, function(err){
             console.log(err);
