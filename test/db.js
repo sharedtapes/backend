@@ -133,4 +133,40 @@ describe('Database', function(){
         });
     });
 
+    it("should update the title of a mixtape", function(done){
+        myDatabase.updateMixtape(1, {
+            title: 'sup',
+            author: 'anonymous',
+            created: '2013-03-04T17:16:37.325Z',
+            modified: '2013-03-07T04:07:10.216Z',
+            locked: false,
+            similarArtists: [ 'Germany Germany',
+                 'Brendan Leddy',
+                 'Germany Germany',
+                 'Drew Harris'],
+            songs: [{
+                id: '456def',
+                song_id: 2,
+                title: 'Baby',
+                artist: 'Justin Bieber',
+                album: 'something',
+                url: 'http://awesome.com/awesome2.mp3',
+                similar_artists: ['Germany Germany', 'Drew Harris'],
+                source: 'http://awesome.com'
+            }, {
+                id: '789hij',
+                title: 'Another Song',
+                artist: 'Justin Bieber',
+                album: 'something',
+                url: 'http://awesome.com/awesome3.mp3',
+                similar_artists: ['Germany Germany', 'Nathan Willson'],
+                source: 'http://awesome.com'
+            }]
+        }).then(function(response){
+            done();
+        }, function(err){
+            console.log(err);
+        });
+    });
+
 });
