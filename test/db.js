@@ -73,7 +73,7 @@ describe('Database', function(){
                 artist: 'Justin Bieber',
                 album: 'something',
                 url: 'http://awesome.com/awesome2.mp3',
-                similar_artists: ['Germany Germany', 'Drew Harris']
+                similar_artists: ['Germany Germany', "Drew Harris's Band"]
             }],
             title: 'untitled',
             author: 'anonymous',
