@@ -1,4 +1,9 @@
 {
-	"exfmAPIKey": "your_key_here",
-	"soundcloudAPIKey": "your_key_here"
+    "exfmAPIKey": "your_key_here",
+    "soundcloudAPIKey": "your_key_here",
+    "postgresHost": "",
+    "postgresPort": 5432,
+    "postgresUser": "",
+    "postgresPassword": "",
+    "postgresDb": "sharedtapes_prod"
 }
