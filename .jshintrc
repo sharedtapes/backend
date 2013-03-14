@@ -38,7 +38,7 @@
     "newcap": true,
     "noempty": true,
     "nonew": false,
-    "nomen": true,
+    "nomen": false,
     "onevar": false,
     "plusplus": false,
     "trailing": true,
